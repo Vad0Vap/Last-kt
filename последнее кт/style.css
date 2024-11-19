@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+  overflow-x: hidden;
+  background-color: #000000ee;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 20px 0;
+  background-color: #4a4a4a;
+  
+}
+
+.header div {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.card {
+  background-color: #6a6699;
+  padding: 6px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.card .price {
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  margin-top: 5px;
+}
+
+.special-offer {
+  background-color: #ff0000;
+}
+
+footer {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  height: 150px;
+}
+p.price0{
+  
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+  
+  
+}
+
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  header .header div {
+    font-size: 36px; 
+  }
+  header {
+    font-size: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}
